@@ -11,7 +11,7 @@ import {
 (async function() {
   // Bootstrap Camera Kit using your API token.
   const cameraKit = await bootstrapCameraKit({
-    apiToken: 'eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNjgzOTA4NzQ0LCJzdWIiOiJlNDU5NDNiNi1kZGQxLTRhZGYtYmZkOC0yZTQzNzhjZTc3MmZ-U1RBR0lOR35lYjMxNWY1Yi0zODBlLTRkZDItYmZlZC1jNzk1OTU4NTMzZGUifQ.mx4APinGG-bP9HRQuQmQ2vlhw1e_A3SObLd2UvAp82I'
+    apiToken: ''
   });
 
   // Create a new CameraKit session.
@@ -21,7 +21,7 @@ import {
   document.getElementById('canvas').replaceWith(session.output.live);
 
   // Load the specified lens group.
-  const { lenses } = await cameraKit.lensRepository.loadLensGroups(['9c3ce3f8-1a90-4692-b980-d529f634bbf9'])
+  const { lenses } = await cameraKit.lensRepository.loadLensGroups([''])
   
 
   // Apply the first lens in the lens group to the CameraKit session.
