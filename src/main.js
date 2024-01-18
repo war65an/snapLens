@@ -11,7 +11,7 @@ import {
 (async function() {
   // Bootstrap Camera Kit using your API token.
   const cameraKit = await bootstrapCameraKit({
-    apiToken: 'eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNjgzOTA4NzQ0LCJzdWIiOiJlNDU5NDNiNi1kZGQxLTRhZGYtYmZkOC0yZTQzNzhjZTc3MmZ-UFJPRFVDVElPTn5kMzU3Zjc2My1iYWFkLTQ1MTQtYmQ2Ny1hNTQ2NzdjOWM5NDcifQ.XEQOrWXU7XH1QFnIjVJXvsYLJ7Y1ytt9bxQJti4Gxm0'
+    apiToken: 'eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNjgzOTA4NzQ0LCJzdWIiOiJlNDU5NDNiNi1kZGQxLTRhZGYtYmZkOC0yZTQzNzhjZTc3MmZ-U1RBR0lOR35lYjMxNWY1Yi0zODBlLTRkZDItYmZlZC1jNzk1OTU4NTMzZGUifQ.mx4APinGG-bP9HRQuQmQ2vlhw1e_A3SObLd2UvAp82I'
   });
 
   // Create a new CameraKit session.
@@ -34,10 +34,7 @@ import {
 
   // Create a CameraKit media stream source from the user's media stream.
   const source = createMediaStreamSource(
-    mediaStream, {
-      // transform: Transform2D.MirrorX,
-      cameraType: 'back'
-    }
+    mediaStream, { cameraType: 'back' }
   );
 
   // Set the source of the CameraKit session.
