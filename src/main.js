@@ -25,7 +25,7 @@ import {
   
 
   // Apply the first lens in the lens group to the CameraKit session.
-  session.applyLens(lenses[0]);
+  session.applyLens(lenses[3]);
 
   // Get the user's media stream.
   let mediaStream = await navigator.mediaDevices.getUserMedia({ video: true });
