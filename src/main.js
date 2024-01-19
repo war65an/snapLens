@@ -28,9 +28,7 @@ import {
   session.applyLens(lenses[0]);
 
   // Get the user's media stream.
-  let mediaStream = await navigator.mediaDevices.getUserMedia({
-    video: {facingMode: 'environment'},
-  });
+  let mediaStream = await navigator.mediaDevices.getUserMedia({ video: true });
 
   // Create a CameraKit media stream source from the user's media stream.
   const source = createMediaStreamSource(
