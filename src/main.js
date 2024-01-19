@@ -35,8 +35,8 @@ import {
   // Create a CameraKit media stream source from the user's media stream.
   const source = createMediaStreamSource(
     mediaStream, {
-      // transform: Transform2D.MirrorX,
-      cameraType: 'back'
+      transform: Transform2D.MirrorX,
+      cameraType: 'front'
     }
   );
 
